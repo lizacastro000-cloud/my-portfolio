@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio 2026 ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--rosa:#f5b5d0;--rosa-claro:#ffe5f0;--rosa-fuerte:#e77eae;--celeste:#a9edf0;--celeste-fuerte:#55cbd4;--amarillo:#fff7d6;--lila:#e9dafa;--texto:#80677a;--blanco:#fff}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:'Quicksand',sans-serif;color:var(--texto);background:#fffdf4;background-image:radial-gradient(#f7c8dc 1.3px,transparent 1.3px),radial-gradient(#c5eeee 1px,transparent 1px);background-size:30px 30px,45px 45px;background-position:0 0,15px 15px}
+h1,h2,h3{font-family:'Fredoka',sans-serif}a{text-decoration:none;color:inherit}img{max-width:100%}
+.decoracion{position:fixed;z-index:-1;color:var(--rosa);opacity:.5;font-size:45px;pointer-events:none}
+.uno{top:15%;left:2%}.dos{top:60%;right:3%}.tres{bottom:10%;left:4%}
+.portada{min-height:680px;padding:25px 8%;background:linear-gradient(135deg,#fff5c9,#fffdf0 50%,#d9fbf7);border-bottom:12px solid var(--celeste);border-radius:0 0 35px 35px;position:relative;overflow:hidden}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:18px 25px;background:#ffffffd9;border:2px solid var(--celeste);border-radius:30px;box-shadow:0 5px 0 #f6c7dc}
+.logo{font-family:'Fredoka',sans-serif;font-size:25px;color:var(--rosa-fuerte);font-weight:700}
+.nav-links{display:flex;gap:25px}.nav-links a{font-weight:700;transition:.3s}.nav-links a:hover{color:var(--rosa-fuerte)}
+.hero{min-height:520px;display:flex;align-items:center;justify-content:center;gap:50px}
+.hero-imagen{flex:1;display:flex;justify-content:center}
+.hero-imagen img{width:430px;max-height:470px;object-fit:contain;filter:drop-shadow(8px 8px 0 #9ce9ed);transition:.4s}
+.hero-imagen img:hover{transform:rotate(-3deg) scale(1.04)}
+.hero-contenido{flex:1;text-align:center}
+.etiqueta{display:inline-block;padding:10px 25px;background:white;border:2px solid var(--celeste);border-radius:30px;color:var(--rosa-fuerte);font-weight:700}
+.hero h1{margin:25px 0;font-size:clamp(45px,6vw,75px);line-height:1.1;color:var(--rosa-fuerte);text-shadow:3px 4px 0 white}
+.hero h1 span{color:var(--celeste-fuerte)}.hero p{font-size:18px;line-height:1.8;margin-bottom:30px}
+.boton{display:inline-block;padding:15px 45px;background:var(--rosa-claro);border:2px solid var(--rosa);border-radius:30px;color:var(--rosa-fuerte);font-size:20px;font-weight:700;box-shadow:0 5px 0 var(--rosa);transition:.3s}
+.boton:hover{background:var(--celeste);color:white;transform:translateY(-5px);box-shadow:0 8px 0 #74cfd5}
+.portada-decoracion{text-align:center;color:var(--celeste-fuerte);font-size:25px;letter-spacing:10px}
+.seccion{padding:90px 8%}
+.sobre-mi{display:flex;align-items:center;justify-content:center;gap:65px}
+.foto-marco{width:310px;min-width:270px;padding:15px;background:var(--rosa-claro);border:4px solid white;outline:3px solid var(--rosa);border-radius:30px;box-shadow:8px 10px 0 #e9b2ce;position:relative;transform:rotate(-3deg)}
+.foto-marco img{width:100%;height:360px;object-fit:cover;border-radius:20px;border:4px solid white}
+.foto-decoracion{text-align:center;padding:10px;color:var(--rosa-fuerte);font-family:'Fredoka',sans-serif;font-size:22px}
+.sticker{position:absolute;background:white;border:2px solid var(--celeste);border-radius:30px;padding:10px 15px;color:var(--celeste-fuerte);font-weight:700;box-shadow:2px 3px 0 #d8d8d8}
+.sticker-1{left:-35px;top:35%;transform:rotate(-10deg)}.sticker-2{right:-35px;bottom:20%;transform:rotate(8deg)}
+.informacion{max-width:600px}.titulo-etiqueta{color:var(--celeste-fuerte);font-weight:700;font-size:18px;margin-bottom:15px}
+.informacion h2{font-size:38px;color:var(--rosa-fuerte);margin-bottom:20px}.informacion h2 span{color:var(--celeste-fuerte)}
+.informacion p{line-height:1.9;margin-bottom:15px;text-align:justify}
+.datos{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.datos div{padding:10px 15px;border-radius:25px;background:white;border:2px solid var(--rosa-claro);font-size:13px;font-weight:700}
+.encabezado{text-align:center;margin-bottom:50px}.encabezado span{color:var(--celeste-fuerte);font-weight:700;letter-spacing:3px}
+.encabezado h2{color:var(--rosa-fuerte);font-size:42px;margin:12px 0}.encabezado p{line-height:1.8}
+.habilidades{background:#fff0f6;border-top:5px dashed white;border-bottom:5px dashed white}
+.skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px}
+.skill-card{text-align:center;padding:35px 15px;background:white;border-radius:25px;border:3px solid white;box-shadow:0 7px 0 #eccbdc;transition:.3s}
+.skill-card:hover{transform:translateY(-10px) rotate(2deg)}.skill-card span{font-size:45px}
+.skill-card h3{margin:15px 0;color:var(--rosa-fuerte);font-size:22px}.skill-card p{font-size:14px;line-height:1.6}
+.rosa{background:#fff0f6}.azul{background:#e6fbfb}.lila{background:#f3eaff}.amarillo{background:#fff8db}
+.proyectos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.proyecto-card{overflow:hidden;background:white;border-radius:25px;border:3px solid var(--rosa-claro);box-shadow:0 8px 0 #efc8dc;transition:.3s}
+.proyecto-card:hover{transform:translateY(-10px)}.proyecto-card img{width:100%;height:220px;object-fit:cover}
+.proyecto-info{padding:25px}.proyecto-info span{color:var(--celeste-fuerte);font-weight:700}
+.proyecto-info h3{color:var(--rosa-fuerte);margin:10px 0;font-size:23px}.proyecto-info p{line-height:1.7;margin-bottom:20px}
+.proyecto-info a{color:var(--celeste-fuerte);font-weight:700}.proyecto-info a:hover{color:var(--rosa-fuerte)}
+.contacto{text-align:center;background:#e8fafa}
+.contacto-caja{max-width:700px;margin:auto;padding:50px 25px;background:white;border:3px dashed var(--rosa);border-radius:35px;box-shadow:0 8px 0 #c8e9e8}
+.contacto-caja span{color:var(--celeste-fuerte);font-weight:700;letter-spacing:3px}
+.contacto-caja h2{color:var(--rosa-fuerte);font-size:45px;margin:15px 0}
+.contacto-caja p{line-height:1.8;margin-bottom:25px}
+.redes{display:flex;justify-content:center;flex-wrap:wrap;gap:15px}
+.redes a{padding:12px 25px;border-radius:30px;background:var(--rosa-claro);color:var(--rosa-fuerte);font-weight:700;border:2px solid var(--rosa);transition:.3s}
+.redes a:hover{background:var(--celeste);border-color:var(--celeste-fuerte);color:white}
+footer{text-align:center;padding:25px;background:var(--rosa-claro);color:var(--rosa-fuerte);border-top:5px dashed white;font-weight:700}
+footer span{display:block;margin-top:10px;color:var(--celeste-fuerte)}
+@media(max-width:900px){.hero{gap:20px}.hero-imagen img{width:330px}.skills-grid{grid-template-columns:repeat(2,1fr)}.proyectos-grid{grid-template-columns:repeat(2,1fr)}.sobre-mi{gap:40px}}
+@media(max-width:650px){.portada{padding:15px 5%}.navbar{flex-direction:column;gap:15px}.nav-links{justify-content:center;flex-wrap:wrap;gap:12px;font-size:13px}.hero{flex-direction:column;padding:35px 0}.hero-imagen img{width:260px;max-height:300px}.hero h1{font-size:45px}.hero p{font-size:15px}.seccion{padding:65px 7%}.sobre-mi{flex-direction:column;text-align:center}.foto-marco{width:270px}.foto-marco img{height:320px}.informacion h2{font-size:30px}.informacion p{text-align:center}.datos{justify-content:center}.skills-grid,.proyectos-grid{grid-template-columns:1fr}.encabezado h2{font-size:32px}.contacto-caja h2{font-size:35px}}
+</style>
+</head>
+
+<body>
+
+<div class="decoracion uno">✿</div>
+<div class="decoracion dos">♡</div>
+<div class="decoracion tres">✧</div>
+
+<header class="portada">
+    <nav class="navbar">
+        <a href="#" class="logo">♡ My Portfolio</a>
+        <div class="nav-links">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-imagen">
+            <!-- Reemplaza esta imagen por tu ilustración -->
+            <img src="assets/personaje.png" alt="Mi personaje">
+        </div>
+        <div class="hero-contenido">
+            <span class="etiqueta">✧ Bienvenidos a mi mundo ✧</span>
+            <h1>My Creative<br><span>Portfolio 2026</span></h1>
+            <p>Creatividad, imaginación y un poquito de magia en cada proyecto.</p>
+            <a href="#sobre-mi" class="boton">PLAY ♡</a>
+        </div>
+    </div>
+    <div class="portada-decoracion">✧ ⋆｡°✩ ୨୧ ✩°｡⋆ ✧</div>
+</header>
+
+<section id="sobre-mi" class="sobre-mi seccion">
+    <div class="foto-marco">
+        <div class="foto-decoracion">✿ My Profile ✿</div>
+        <img src="assets/perfil.jpg" alt="Mi fotografía">
+        <div class="sticker sticker-1">Creative ♡</div>
+        <div class="sticker sticker-2">Dreamer ✧</div>
+    </div>
+
+    <div class="informacion">
+        <div class="titulo-etiqueta">୨୧ ABOUT ME</div>
+        <h2>¡Hola! Soy <span>Tu Nombre</span> ♡</h2>
+        <p>¡Bienvenidos a mi portafolio! Soy estudiante de Ingeniería en Software, apasionada por la creatividad, el diseño y la tecnología.</p>
+        <p>Me gusta aprender cosas nuevas, experimentar con diferentes estilos y transformar mis ideas en proyectos. Disfruto combinar el diseño visual con el desarrollo web.</p>
+        <p>Este espacio reúne algunos de mis trabajos, habilidades y proyectos realizados durante mi formación.</p>
+        <div class="datos">
+            <div>♡ Creatividad</div>
+            <div>♡ Trabajo en equipo</div>
+            <div>♡ Aprendizaje constante</div>
+            <div>♡ Diseño y tecnología</div>
+        </div>
+    </div>
+</section>
+
+<section id="habilidades" class="habilidades seccion">
+    <div class="encabezado">
+        <span>✧ MY SKILLS ✧</span>
+        <h2>Mis habilidades ♡</h2>
+        <p>Algunas herramientas y tecnologías que utilizo.</p>
+    </div>
+
+    <div class="skills-grid">
+        <div class="skill-card rosa"><span>💻</span><h3>Desarrollo web</h3><p>HTML, CSS y JavaScript</p></div>
+        <div class="skill-card azul"><span>🎨</span><h3>Diseño</h3><p>Creatividad y diseño visual</p></div>
+        <div class="skill-card lila"><span>⚙️</span><h3>Programación</h3><p>Python y lógica de programación</p></div>
+        <div class="skill-card amarillo"><span>✨</span><h3>Herramientas</h3><p>GitHub, VS Code y WordPress</p></div>
+    </div>
+</section>
+
+<section id="proyectos" class="proyectos seccion">
+    <div class="encabezado">
+        <span>୨୧ MY CREATIONS ୨୧</span>
+        <h2>Mis proyectos</h2>
+        <p>Una pequeña colección de mis trabajos favoritos.</p>
+    </div>
+
+    <div class="proyectos-grid">
+        <article class="proyecto-card">
+            <img src="assets/proyecto1.jpg" alt="Proyecto web">
+            <div class="proyecto-info">
+                <span>01 ✧</span><h3>Proyecto Web</h3>
+                <p>Diseño y desarrollo de una página web.</p>
+                <a href="#">Ver proyecto ♡</a>
+            </div>
+        </article>
+
+        <article class="proyecto-card">
+            <img src="assets/proyecto2.jpg" alt="Proyecto de software">
+            <div class="proyecto-info">
+                <span>02 ✧</span><h3>Proyecto de Software</h3>
+                <p>Desarrollo de una solución tecnológica.</p>
+                <a href="#">Ver proyecto ♡</a>
+            </div>
+        </article>
+
+        <article class="proyecto-card">
+            <img src="assets/proyecto3.jpg" alt="Diseño creativo">
+            <div class="proyecto-info">
+                <span>03 ✧</span><h3>Diseño Creativo</h3>
+                <p>Diseño visual y creatividad digital.</p>
+                <a href="#">Ver proyecto ♡</a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section id="contacto" class="contacto seccion">
+    <div class="contacto-caja">
+        <span>♡ LET'S CONNECT ♡</span>
+        <h2>¡Hablemos!</h2>
+        <p>¿Te gustaría conocer más sobre mis proyectos? Puedes encontrarme en mis redes sociales.</p>
+        <div class="redes">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="mailto:tuemail@gmail.com">Email</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Hecho con ♡ y mucha creatividad · 2026</p>
+    <span>✧ ୨୧ ✧</span>
+</footer>
+
+</body>
+</html>
